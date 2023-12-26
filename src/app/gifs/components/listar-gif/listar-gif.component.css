@@ -9,6 +9,24 @@
     margin-top: 2rem;
 }
 
+@media(max-width: 767px){
+    .grid-card{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1367px){
+    .grid-card{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+        width: 95%;
+    }
+}
+
 .card{
     display: flex;
     flex-direction: column;
@@ -18,6 +36,20 @@
     font-size: 2rem;
     background-color: var(--deep-gray);
     color: white;
+}
+
+@media(max-width: 767px){
+    .card{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1367px){
+    .card{
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 .card img{

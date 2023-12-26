@@ -11,10 +11,26 @@
     height: 40rem;
 }
 
+@media (max-width: 767px){
+    .hero{
+        height: 50vh;
+    }
+}
+
 .buscar{
     width: 65%;
     margin: 0 auto;
     text-align: center;
+}
+
+@media (max-width: 767px){
+    .buscar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 3rem;
+    }
 }
 
 .buscar input[type = 'text']{
@@ -28,6 +44,14 @@
     transition: 0.2s ease-in-out;
     color: white;
 }
+
+@media (max-width: 767px){
+    .buscar input[type = 'text']{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
 .buscar input[type = 'text']:hover{
     border: 2px solid var(--orange);
 }
@@ -41,6 +65,12 @@
     background-color: rgb(44, 44, 44);
     color: white;
     transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 767px){
+    .buscar input[type='submit']{
+        padding: 1rem 3rem;
+    }
 }
 
 .buscar input[type='submit']:hover{
