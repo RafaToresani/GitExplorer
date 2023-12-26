@@ -4,6 +4,7 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GifModule } from './gifs/gif.module';
+import { GifRoutingModule } from './gifs/gif-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { GifModule } from './gifs/gif.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GifModule
+    GifModule,
+    GifRoutingModule
   ],
   providers: [
     provideClientHydration()
