@@ -1,0 +1,50 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../../assets/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40rem;
+}
+
+.buscar{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buscar input[type = 'text']{
+    width: 70%;
+    height: 4.4rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--gray);
+    transition: 0.2s ease-in-out;
+    color: white;
+}
+.buscar input[type = 'text']:hover{
+    border: 2px solid var(--orange);
+}
+
+
+.buscar input[type='submit']{
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.buscar input[type='submit']:hover{
+    background-color: var(--orange);
+    color: black;
+    font-size: 2.2rem;
+}

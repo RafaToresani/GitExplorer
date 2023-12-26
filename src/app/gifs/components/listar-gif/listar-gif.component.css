@@ -1,0 +1,35 @@
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: var(--shadow-elevation-medium);
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color: var(--deep-gray);
+    color: white;
+}
+
+.card img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

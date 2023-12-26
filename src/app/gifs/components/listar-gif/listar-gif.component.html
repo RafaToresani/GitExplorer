@@ -1,0 +1,6 @@
+<section class="grid-card">
+  <div *ngFor="let item of listaGifs" class="card">
+    <h3>{{ item.title }}</h3>
+    <img src="{{ item.images.original.url }}" alt="" />
+  </div>
+</section>
